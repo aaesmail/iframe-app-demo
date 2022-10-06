@@ -1,0 +1,31 @@
+.token-card-container {
+  width: 90%;
+  text-align: center;
+  min-height: 45px;
+  border: 1px solid #f2f4f8;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.token-card-container:hover {
+  border: 1px solid #939599;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  color: #939599;
+}
+
+.token-card-container--selected {
+  cursor: default;
+  border: 1px solid #939599;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  color: #939599;
+}
+
+.token-text {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
