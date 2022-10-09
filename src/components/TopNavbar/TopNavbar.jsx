@@ -39,7 +39,7 @@ const StyledTextField = withStyles({
   },
 })(TextField);
 
-const TopNavbar = ({ url, changeUrl, appName, changeAppName, appMode, changeAppMode }) => {
+const TopNavbar = ({ url, changeUrl, appToken, changeAppToken }) => {
   return (
     <div className='top-navbar main-theme'>
       <div className='icon'>
@@ -59,21 +59,12 @@ const TopNavbar = ({ url, changeUrl, appName, changeAppName, appMode, changeAppM
         />
 
         <StyledTextField
-          className='app-name'
-          label='App Name'
+          className='app-token'
+          label='App Token'
           variant='outlined'
           fullWidth
-          value={appName}
-          onChange={(event) => changeAppName(event.target.value)}
-        />
-
-        <StyledTextField
-          className='app-mode'
-          label='App Mode'
-          variant='outlined'
-          fullWidth
-          value={appMode}
-          onChange={(event) => changeAppMode(event.target.value)}
+          value={appToken}
+          onChange={(event) => changeAppToken(event.target.value)}
         />
       </div>
     </div>

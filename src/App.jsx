@@ -8,8 +8,7 @@ import './App.css';
 
 function App() {
   const [baseUrl, setBaseUrl] = useState('');
-  const [appName, setAppName] = useState('');
-  const [appMode, setAppMode] = useState('');
+  const [appToken, setAppToken] = useState('');
   const [selectedToken, setSelectedToken] = useState('');
 
   return (
@@ -17,10 +16,8 @@ function App() {
       <TopNavbar
         url={baseUrl}
         changeUrl={(url) => setBaseUrl(url)}
-        appName={appName}
-        changeAppName={(name) => setAppName(name)}
-        appMode={appMode}
-        changeAppMode={(mode) => setAppMode(mode)}
+        appToken={appToken}
+        changeAppToken={(name) => setAppToken(name)}
       />
 
       <div className='body'>
@@ -31,8 +28,7 @@ function App() {
 
         <IFrame
           baseUrl={baseUrl}
-          appName={appName}
-          appMode={appMode}
+          appToken={appToken}
           token={selectedToken}
         />
       </div>

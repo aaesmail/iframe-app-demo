@@ -29,12 +29,7 @@
   width: 25vw !important;
 }
 
-.app-name {
-  width: 15vw !important;
-  margin-left: 3vw !important;
-}
-
-.app-mode {
-  width: 10vw !important;
+.app-token {
+  width: 25vw !important;
   margin-left: 3vw !important;
 }

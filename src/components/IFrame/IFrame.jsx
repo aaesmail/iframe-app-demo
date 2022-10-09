@@ -1,7 +1,7 @@
 import './IFrame.css';
 
-const IFrame = ({ baseUrl, appName, appMode, token }) => {
-  if (!baseUrl || !appName || !appMode || !token) return null;
+const IFrame = ({ baseUrl, appToken, token }) => {
+  if (!baseUrl || !appToken || !token) return null;
 
   let finalUrl = baseUrl.trim();
 
@@ -9,7 +9,7 @@ const IFrame = ({ baseUrl, appName, appMode, token }) => {
     finalUrl += '/';
   }
 
-  finalUrl += `application/${appName.trim()}/${appMode.trim()}/occurrence-info/${token.trim()}`;
+  finalUrl += `application/${appToken.trim()}/occurrence-info/${token.trim()}`;
 
   return (
     <iframe
